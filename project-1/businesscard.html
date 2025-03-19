@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="ваш_integrity_ключ" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .info {
+            flex-grow: 1;
+        }
+        .name {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .social-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            margin-bottom: 30px;
+        }
+        .social-links li {
+            margin-right: 20px;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+        .social-links a:hover {
+            color: #23527c;
+        }
+        .education-block, .courses-block, .interests-block {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .education-block h2, .courses-block h2, .interests-block h2 {
+            margin-top: 0;
+        }
+        .education-block ul, .courses-block ul, .interests-block ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .education-block li, .courses-block li, .interests-block li {
+            margin-bottom: 10px;
+        }
+        .education-block li::before,
+        .courses-block li::before,
+        .interests-block li::before {
+            content: "\2022";
+            margin-right: 10px;
+            font-weight: bold;
+            color: #337ab7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="photos/coming-soon-page_550.jpeg" alt="Фотография" class="photo">
+            <div class="info">
+                <div class="name">Скырков Артём</div>
+                <div class="description">Студент 2-ого курса Зеленодольского механического колледжа. Направление "09.02.07 Информационные системы и программирование". Начинающий дминистратор баз данных, разработчик мобильных приложений, WEB-разработчик.</div>
+            </div>
+        </div>
+        
+        <div class="education-block">
+            <h2>Основное образование</h2>
+            <ul>
+                <li>Среднее профессиональное образование: ГАПОУ "Зеленодольский механический колледж"</li>
+            </ul>
+        </div>
+
+        <div class="courses-block">
+            <h2>Образование и курсы</h2>
+            <ul>
+                <li>Основы программирования на языке Python на Яндекс Лицее</li>
+                <li>Основы промышленного программирования на языке Python на Яндекс Лицее</li>
+                <li>Курс по веб-разработке: "HTML, CSS"</li>
+                <li>Курс по программированию квадрокоптеров на языке Python</li>
+            </ul>
+        </div>
+
+        <div class="interests-block">
+            <h2>Интересы</h2>
+            <ul>
+                <li>Программирование и технологии</li>
+                <li>Путешествия</li>
+                <li>Фотография и видеосъемка</li>
+            </ul>
+        </div>
+
+        <ul class="social-links">
+            <li><a href="https://t.me/kiselb0" target="_blank"><i class="fab fa-telegram"></i> Telegram</a></li>
+            <li><a href="https://github.com/cdusr01" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="mailto:home01725@gmail.com"><i class="fas fa-envelope"></i> Gmail</a></li>
+        </ul>        
+    </div>
+</div>
+</body>
+</html>
